@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shakeel Ahmed - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <header>
+      <nav>
+        <div class="left">Shakeel Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      
+      <div class="hamburger">
+        <!-- <img class="invert" width="30px" src="close.svg" alt=""> -->
+        <img class="invert" width="30px" src="hamburger.svg" alt="">
+      </div>
+
+    </header>
+
+    <!-- main  -->
+    <main>
+      <section class="firstSection container">
+        <div class="left">
+          Hi I am Shakeel
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Contact</button>
+            <button class="btn">Download CV</button>
+          </div>
+        </div>
+        <div class="right">
+          <img src="profile-pic.png" alt="" />
+        </div>
+
+       
+      </section>
+      <hr />
+
+      <!-- about section  -->
+      <section class="about container">
+        <h1 class="center">About Me</h1>
+        <div class="about-container">
+          <div class="left">
+            <h1>Shakeel Ahmed - MERN Stack Developer</h1>
+             I am a skilled MERN Stack Developer with expertise in MongoDB, Express.js, React.js, and Node.js develop robust, scalable web applications with seamless
+            integration between front-end and back-end technologies. Proficient
+            in creating responsive, user-friendly interfaces with React.js and
+            efficient server-side applications and APIs with Node.js and
+            Express.js, I am experienced in designing and managing databases
+            with MongoDB. With strong analytical skills for debugging and issue
+            resolution, excellent team collaboration and communication
+            abilities, and a commitment to continuous learning and staying
+            updated with industry trends, I am passionate about coding and
+            dedicated to delivering high-quality web applications. Let's connect
+            to turn your vision into reality with innovative solutions.
+          </div>
+          <div class="right"><img src="about-image.jpg" alt="" /></div>
+        </div>
+      </section>
+      <hr>
+      <!-- services section  -->
+      <section class="services container">
+        <h1 class="center">My Services</h1>
+        <div class="service-boxes">
+
+            <div class="service-box">
+                <img src="" alt="">
+                <h3>Webistes</h3>
+                <p>A well-designed website is a powerful marketing and communication tool that helps build trust and generate leads.</p>
+            </div>
+            <div class="service-box">
+                <h3>Ecommerce</h3>
+                <p>With eCommerce solutions, businesses can operate 24 hours a day, 7 days a week, and reach customers in any time zone.</p>
+            </div>
+            <div class="service-box">
+                <h3>Web Applications</h3>
+                <p>Web applications can reach a global audience. They're interactive and engaging, so can easily hold users' attention.</p>
+            </div>
+            <div class="service-box">
+                <h3>Content Management System</h3>
+                <p>A dedicated CMS designed to the specific needs of your business will save time and money by optimizing internal workflows.
+
+                </p>
+            </div>
+        </div>
+      </section>
+      <hr>
+<!-- projects container  -->
+      <section class="projects container">
+        <h1 class="center">My Projects</h1>
+        <div class="projects-box">
+            <div class="box">
+                <h3>Gym Landing Page</h3>
+                <img src="gym.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti reiciendis veritatis autem consequatur, nostrum ipsam voluptate omnis ullam maxime quis reprehenderit culpa aliquid pariatur non dolorum, excepturi deserunt. Quo!</p>
+                <button><a href="https://shakeelahmadcoder.github.io/Gym-Landing-Page/" target="_blank">View Project</a></button>
+            </div>
+            <div class="box">
+                <h3>Netflix Clone</h3>
+                <img src="netflix.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti reiciendis veritatis autem consequatur, nostrum ipsam voluptate omnis ullam maxime quis reprehenderit culpa aliquid pariatur non dolorum, excepturi deserunt. Quo!</p>
+                <button><a href="https://shakeelahmadcoder.github.io/Netflix-Website-Clone-/" target="_blank">View Project</a></button>
+            </div>
+            <div class="box">
+                <h3>Spotify Clone</h3>
+                <img src="spotify.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti reiciendis veritatis autem consequatur, nostrum ipsam voluptate omnis ullam maxime quis reprehenderit culpa aliquid pariatur non dolorum, excepturi deserunt. Quo!</p>
+                <button><a href="https://shakeelahmadcoder.github.io/Spotify-Songs-Website-/" target="_blank">View Project</a></button>
+            </div>
+        </div>
+      </section>
+      <hr>
+      <!-- contact container  -->
+      <section class="contact container">
+        <h1 class="center">Contact Me</h1>
+        <form action="">
+            <input type="text" placeholder="Enter Your name">
+            <input type="email" placeholder="Enter Your email">
+            <input type="number" placeholder="Enter Your number">
+            <input type="text" placeholder="Enter Your Compan bio data">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write description hear"></textarea>
+            <button>Submit</button>
+        </form>
+      </section>
+<hr>
+
+<footer>All Right Reserved &copy; Shakeel Ahmed Developer</footer>
+    </main>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Mern Stack Developer.",
+          "Web Designer.",
+          "Full Stack Developer.",
+        ],
+        typeSpeed: 80,
+        Infinity: true,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

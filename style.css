@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+/* utils  */
+.btn{
+    background-color: white;
+    padding: 12px 23px;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.none{
+    display: block;
+}
+.invert{
+    filter: invert(100%);
+}
+h3{
+    margin: 20px 0;
+}
+.container{
+    width: 80vw;
+    margin: auto;
+}
+
+.center{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+/* Navigation Bar  */
+
+header{
+    width: 100vw;
+    background-color: rgb(24, 24, 75);
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+.hamburger{
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+nav .left{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 8px 12px;
+
+    margin: 12px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    
+}
+
+/* section  */
+/* firstSection */
+.firstSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+    margin: 60px auto;
+    /* height: 100vh; */
+}
+.firstSection .right img{
+    width: 300px;
+}
+
+.firstSection .left{
+    font-size: 2.3rem;
+}
+
+/* about container  */
+.about{
+    margin: 30px auto;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    gap: 12px;  
+    text-align: justify;
+    margin: 20px 0;
+}
+.about-container .right img{
+    width: 350px;
+}
+.about-container .left{
+    padding: 0px 60px;
+}
+
+/* services section  */
+.services{
+    margin: 30px auto;
+}
+.service-boxes{
+    margin: 30px 0;
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+.service-box{
+    background-color: rgb(24, 24, 75);
+    padding: 20px 15px;
+    text-align: center;
+}
+
+/* projects section  */
+.projects{
+    margin: 30px auto;
+}
+.projects-box{
+    margin: 30px 0;
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+.projects-box .box{
+    background-color: rgb(24, 24, 75);
+    padding: 20px 15px;
+    /* width: 400px; */
+    /* text-align: center; */
+    object-fit: contain;
+}
+.projects-box .box img{
+    width: 100%;
+}
+.projects-box .box button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.projects-box .box button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+input, textarea{
+    padding: 8px;
+    width: 80vw;
+    background-color: rgb(24, 24, 75);
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    font-size: 18px;
+    
+}
+form button{
+    background-color: rgb(24, 24, 75);
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    width: 225px;
+    margin: 8px auto;
+    font-size: 20px;
+    border: 2px solid white;
+}
+/* .contact */
+.contact{
+    margin: 30px auto; 
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+}
+.hamburger{
+    display: none;
+}
+
+
+@media (max-width: 1300px) {
+    .projects-box {
+        flex-direction: column;
+    }   
+
+    .service-boxes{
+        flex-direction: column;
+    }
+    .about-container{
+        flex-direction: column-reverse;
+        text-align: center; 
+    }
+    .firstSection{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hamburger{
+        display: block;
+    }
+    nav{
+        flex-direction: column;
+        display: none;
+        text-align: center;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-container .left{
+        padding: 0px;
+    }
+
+    .firstSection .left{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .firstSection .right img {
+        width: 250px;
+    }
+
+}
+
